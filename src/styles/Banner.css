@@ -1,0 +1,46 @@
+.circle{
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background-color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.circles{
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding-top: 200px;
+    
+}
+
+.circle.one{
+    position: absolute;
+    background-color: #ff9900;
+}
+
+.circle.two{
+    position: absolute;
+    translate: -187.5px 342.5px; 
+    background-color: #193cff;
+}
+
+.circle.three{
+    position: absolute;
+    translate: 187.5px 342.5px; 
+    background-color: #8e00b9;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

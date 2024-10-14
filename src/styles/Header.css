@@ -1,18 +1,26 @@
 .arz-header{
     margin: 10px 0;
-    background-color: #f8f9fa;
+    backdrop-filter: blur(10px);
+    background: linear-gradient(-5deg, rgba(255,255,255,0.1) 50%, rgba(255, 255, 255, 0.247) 100%);
+    border: 1px solid #515152;
     padding: 10px 0;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
     position: fixed;
     left: 50%;
     transform: translateX(-50%);
-    width: 90%;
+    width: 50%;
     z-index: 1000;
     border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    transition: all 0.3s;
 }
+
+.arz-header .arz-logo{
+    height: 40px;
+    padding: 0 10px;
+} 
 
 .arz-header h1{
     font-size: 1.8rem;
@@ -46,10 +54,15 @@
     padding: 10px 20px;
     border-radius: 8px;
     transition: all 0.3s;
+    color: #ffff;
 }
 
 .arz-header nav ul li a:hover{
-    background-color: #b5d8fc;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,.2));
+    background-color: #d6d6d6;
+    filter: drop-shadow(0 0px 8px rgb(25, 132, 255));
+    color: #000;
 }
 
+.arz-header.sticky{
+    position: fixed;
+}

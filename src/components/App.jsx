@@ -1,25 +1,13 @@
 import '../styles/App.css'
 import Header from './Header'
-import Lorem from './Lorem'
+import Banner from './Banner'
+import React from 'react'
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
-      <Lorem />
+      <Banner />
     </div>
   );
 }

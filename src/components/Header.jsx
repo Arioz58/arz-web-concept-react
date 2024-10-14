@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/Header.css'
+import '../styles/Header.css';
+import logo from '../assets/logo.png';
 
 const Header = () => {
     const [isSticky, setIsSticky] = React.useState(false);
@@ -22,7 +23,7 @@ const Header = () => {
 
     return (
         <header className={`arz-header ${isSticky ? 'sticky' : ''}`}>
-            <h1>ARZ Web Concept</h1>
+            <a href="#home"><img src={logo} alt="Logo" className="arz-logo" /></a>
             <nav>
                 <ul>
                     <li><a href="#home">Home</a></li>
