@@ -64,5 +64,18 @@
 }
 
 .arz-header.sticky{
-    position: fixed;
+    width: 60%;
+}
+
+/*mobile*/
+@media (max-width: 768px){
+    .arz-header{
+        width: 90%;
+        border-radius: 12px;
+    }
+
+    .arz-header nav ul li a{
+        font-size: 1rem;
+    }
+
 }
