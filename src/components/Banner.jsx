@@ -7,7 +7,12 @@ const Banner = () => {
         <div className="arz-banner-content">
             <h1>ARZ Web Concept</h1>
             <p>Web Development | Web Design | SEO</p>
-            <p class="main_text_top">Votre <b>Vision</b>, Notre <b>Création</b></p>
+            <p className="main_text_top">Votre <b>Vision</b>, Notre <b>Création</b></p>
+            <div className="arz-online">
+                <div className="arz-online-ping"></div>
+                <div className="arz-online-ping two"></div>
+                <p>en ligne pour de nouveaux projets</p>
+            </div>
         </div>
         <div className="circles">
             <div className="noise"></div>

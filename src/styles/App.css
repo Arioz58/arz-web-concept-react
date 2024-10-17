@@ -1,6 +1,5 @@
 html{
     overflow-x: hidden;
-    /* Custom Scrollbar */
     scrollbar-width: thin;
     scrollbar-color: hsla(0, 0%, 100%, .5) transparent;
 }
