@@ -3,16 +3,23 @@ import '../styles/Banner.css';
 
 const Banner = () => {
   return (
-    <div className="arz-banner">
+    <div className="arz-banner" id='home'>
         <div className="arz-banner-content">
             <h1>ARZ Web Concept</h1>
             <p>Web Development | Web Design | SEO</p>
-            <p className="main_text_top">Votre <b>Vision</b>, Notre <b>Création</b></p>
+            <p className="main-text-top">Votre <b>Vision</b>, Notre <b>Création</b></p>
             <div className="arz-online">
                 <div className="arz-online-ping"></div>
                 <div className="arz-online-ping two"></div>
-                <p>en ligne pour de nouveaux projets</p>
+                <p>en ligne pour de nouveaux projets !</p>
             </div>
+            <div className="arz-banner-info">
+                <p>Un projet, besoin d'aide ou d'informations supplémentaires ? <br />
+                    Cliquez sur le bouton ci-dessous <br />et notre équipe se fera un plaisir de répondre 
+                    à toutes vos questions.</p>
+            </div>
+            <button className='arz-form-btn'>Parlons-en !💬<span className="material-symbols-outlined">
+            arrow_downward</span></button>
         </div>
         <div className="circles">
             <div className="noise"></div>

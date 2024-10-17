@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 .arz-banner{
-    height: 40vh;
+    padding-top: 200px;
+    height: 50vh;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -35,17 +39,24 @@
     flex-direction: column;
 }
 
+.arz-banner-content .main-text-top{
+    margin: 80px 0;
+    font-family: 'Instrument Serif', serif;
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+}
+
 .arz-banner .arz-online{
-    margin-top: 40px;
     height: 40px;
     width: 350px;
     background: linear-gradient(-5deg, #030712 70%, rgba(255, 255, 255, 0.247) 100%);
     border: 1px solid #515152;
-    border-radius: 5px;
+    border-radius: 8px;
     z-index: 2;
     display: grid;
     grid-template-columns: 20px 3fr;
     align-items: center;
+    margin-top: 50px;
 }
 
 .arz-banner .arz-online .arz-online-ping{
@@ -69,6 +80,38 @@
     font-size: 1.2rem;
     grid-column: 2;
     margin-right: 5px;
+}
+
+.arz-banner .arz-banner-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+    z-index: 2;
+}
+
+.arz-banner .arz-form-btn{
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    z-index: 2;
+    height: 50px;
+    width: 200px;
+    background-color: transparent;
+    border: 1px solid #4e4e4eee;
+    color: #eeee;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    font-family: 'Instrument Serif', serif;
+    letter-spacing: 2px;
+}
+
+.arz-banner .arz-form-btn:hover{
+    transition: all 0.3s ease;
+    border: 1px solid #eeee;
 }
 
 .circles{
