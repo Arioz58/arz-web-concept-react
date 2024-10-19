@@ -35,3 +35,24 @@ h2{
     border-radius: 50px;
     border: 1px solid #364472;
 }
+
+.arz-about-content{
+    height: 2250px; /* Ensure there is enough height for scrolling */
+}
+
+.arz-about-content p.hidden {
+    opacity: 0;
+}
+
+.arz-about-content p.visible {
+    opacity: 1;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 500px; /* Adjust this value to move the <p> lower */
+}
+
+h2.sticky{
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 150px;
+}
