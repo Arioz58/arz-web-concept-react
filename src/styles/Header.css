@@ -70,12 +70,25 @@
 /*mobile*/
 @media (max-width: 768px){
     .arz-header{
-        width: 90%;
+        height: 20px;
+        width: 70%;
         border-radius: 12px;
     }
 
+    .arz-header nav{
+        display: none;
+    }
+
+    .arz-header .arz-logo{
+        height: 30px;
+    }
+
+    .arz-header.sticky{
+        width: 90%;
+    }
+
     .arz-header nav ul li a{
-        font-size: 1rem;
+        font-size: .9rem;
     }
 
 }
