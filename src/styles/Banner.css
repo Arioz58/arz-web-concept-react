@@ -194,11 +194,26 @@
     .arz-banner p{
         font-size: 1rem;
     }
-    
+    .arz-banner-content h1{
+        font-size: 1.5rem;
+    }
+    .arz-banner-content p{
+        font-size: 1rem;
+    }
+    .arz-banner .main-text-top{
+        font-size: 2rem;
+        margin: 40px 0;
+    }
+    .arz-banner .arz-online{
+        width: 300px;
+        padding: 10px 0;
+    }
+    .arz-banner .arz-banner-info{
+        width:250px;
+    }
     .circles{
         overflow-x: hidden;
     }
-
     .circle.one{
         height: 100vw;
         width: 100vw;
@@ -213,7 +228,6 @@
     }
 }
 
-
 @keyframes apear {
     0% {
         scale: .7;
@@ -225,7 +239,6 @@
         opacity: 1;
     }
 }
-
 
 @keyframes circle-pop {
     0% {

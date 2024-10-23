@@ -18,7 +18,7 @@ const Banner = () => {
                     Cliquez sur le bouton ci-dessous <br />et notre équipe se fera un plaisir de répondre 
                     à toutes vos questions.</p>
             </div>
-            <button className='arz-form-btn'>Parlons-en !💬<span className="material-symbols-outlined">
+            <button className='arz-form-btn'><b>Parlons-en !</b>💬<span className="material-symbols-outlined">
             arrow_downward</span></button>
         </div>
         <div className="circles">
