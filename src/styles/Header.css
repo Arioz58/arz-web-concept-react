@@ -57,12 +57,6 @@
     color: #ffff;
 }
 
-.arz-header nav ul li a:hover{
-    background-color: #d6d6d6;
-    filter: drop-shadow(0 0px 8px rgb(25, 132, 255));
-    color: #000;
-}
-
 .arz-header.sticky{
     width: 60%;
 }
@@ -71,24 +65,40 @@
 @media (max-width: 768px){
     .arz-header{
         height: 20px;
-        width: 70%;
-        border-radius: 12px;
+        width: 255px;
+        border-radius: 999px;
+        justify-content: center;
+        padding: 8px 0;
     }
 
     .arz-header nav{
-        display: none;
+        margin-right: 0px;
     }
 
     .arz-header .arz-logo{
-        height: 30px;
+        display: none;
     }
 
     .arz-header.sticky{
-        width: 90%;
+        width: 255px;
+    }
+
+    .arz-header nav ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-between;
     }
 
     .arz-header nav ul li a{
-        font-size: .9rem;
+        font-size: 1rem;
+        padding: 5px;
+        border-radius: 999px;
     }
 
+    .arz-header nav ul li a.active{
+        background: #ffffff;
+        color: #000000;
+        border-radius: 99px;
+    }
 }

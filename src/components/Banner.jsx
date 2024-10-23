@@ -3,7 +3,7 @@ import '../styles/Banner.css';
 
 const Banner = () => {
   return (
-    <div className="arz-banner" id='home'>
+    <section className="arz-banner" id='home'>
         <div className="arz-banner-content">
             <h1>ARZ Web Concept</h1>
             <p>Web Development | Web Design | SEO</p>
@@ -27,7 +27,7 @@ const Banner = () => {
             <div className="circle two"></div>
             <div className="circle three"></div>
         </div>
-    </div>
+    </section>
     );
 }
 

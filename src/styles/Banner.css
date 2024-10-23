@@ -194,6 +194,11 @@
     .arz-banner p{
         font-size: 1rem;
     }
+    
+    .circles{
+        overflow-x: hidden;
+    }
+
     .circle.one{
         height: 100vw;
         width: 100vw;
