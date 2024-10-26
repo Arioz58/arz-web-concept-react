@@ -31,27 +31,22 @@ h2{
     margin: 30px 0;
     padding: 40px;
     border-radius: 50px;
-    top: 500px;
 }
 
 .arz-about-content{
-    height: 2250px; /* Ensure there is enough height for scrolling */
+    height: 1500px;
 }
 
 .arz-about-content p.hidden {
     opacity: 0;
-    transform: rotate(0.1deg); /* Prevents Safari from collapsing the sticky element */
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
     position: sticky;
-    animation: fadeOut 1s forwards;
 }
 
 .arz-about-content p.visible {
     opacity: 1;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
     position: sticky;
-    top: 500px; /* Adjust this value to move the <p> lower */
-    animation: fadeIn 1s forwards;
 }
 
 h2.hidden {
@@ -65,7 +60,7 @@ h2.visible {
 }
 
 h2.sticky{
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky; 
     position: sticky;
     top: 150px;
 }
@@ -74,10 +69,11 @@ h2.sticky{
     .arz-about{
         width: 80%;
     }
-
     h2{
+        margin: 0;
         font-size: 2rem;
     }
+
     .arz-about-content p{
         font-size: 1.2rem;
         width: 80%;
