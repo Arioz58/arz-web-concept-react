@@ -22,17 +22,39 @@ h2{
     letter-spacing: 1px;
 }
 
-.arz-about-content p{
+.arz-about-content .arz-grid{
+    display: grid;
+    width: 100%;
+    height: 370px ;
+    padding: 40px;
+    background-color: #3143586b;
+    box-shadow: inset 0 0 30px #415f88bb;
+    border-radius: 25px;
+    border: 2px solid #a1a1a180;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
     font-size: 1.5rem;
     color: #cfcfcf;
     text-align: center;
-    margin: 0;
-    width: 50%;
-    margin: 30px 0;
-    padding: 40px;
-    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
 }
 
+.arz-paragraph-img{
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 3px solid #a1a1a180;
+    box-shadow: 0 0px 30px #00000080;
+}
+.arz-paragraph-img {
+    width: 300px;
+    height: auto;
+    object-fit: cover;
+    animation: floating 1s ease-in-out infinite;
+}
 .arz-about-content{
     height: 2000px;
 }
@@ -43,8 +65,7 @@ h2.sticky{
     top: 150px;
 }
 
-/* About.css */
-.arz-about-content p.arz-paragraph {
+.arz-about-content p.arz-about-paragraph {
     transition: opacity 0.5s ease;
     opacity: 1;
 }
@@ -53,18 +74,9 @@ h2.sticky{
     animation: fadeIn 0.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.floating {
+    
 }
-
-
 
 @media screen and (max-width: 768px){
     .arz-about{
@@ -102,5 +114,18 @@ h2.sticky{
         filter: blur(15px);
     }
 }
+
+@keyframes floating {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 
