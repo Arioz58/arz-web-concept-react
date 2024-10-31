@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import "../styles/About.css";
 import ARZLocation from "../assets/ARZ-location.png";
 import ARZPhonePC from "../assets/ARZ-phone-PC.png";
-import ARZPath from "../assets/ARZ-path-1.png";
+import ARZbrk from "../assets/ARZ-brk.png";
 
 const About = () => {
     const paragraphRef = useRef(null);
@@ -18,7 +18,7 @@ const About = () => {
             "Nous mettons notre expertise à votre service pour vous aider à concrétiser vos projets web. Que vous soyez une entreprise, une association ou un particulier, nous vous accompagnons dans la réalisation de votre projet web."
         ];
 
-        const paragraphImgList = [ ARZLocation, ARZPhonePC, ARZPath ]; // Add images as needed
+        const paragraphImgList = [ ARZLocation, ARZPhonePC, ARZbrk ]; // Add images as needed
 
         const handleScroll = () => {
             const paragraphContent = paragraphContentRef.current;
@@ -40,12 +40,10 @@ const About = () => {
                 img.style.boxShadow = "0 0 30px #000";
                 img.style.filter = "none";
                 img.style.transition = "all 0.5s";
-                img.classList.remove("floating");
             }
             if (containerPos < windowHeight / 2 - 600) {
                 newContent = paragraphList[1];
                 newImgSrc = paragraphImgList[1];
-                img.classList.add("floating");
                 img.style.border = "none";
                 img.style.boxShadow = "none";
                 img.style.filter = "drop-shadow(0 0 20px #000)";
