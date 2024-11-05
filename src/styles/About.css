@@ -99,11 +99,11 @@ h2{
 }
 
 .active{
-    animation: fadeIn 0.7s ease-in-out forwards;
+    animation: fadeIn 0.7s cubic-bezier(0, 0.54, 0.41, 0.98) forwards;
 }
 
 .inactive{
-    animation: fadeOut 0.7s ease-in-out forwards;
+    animation: fadeOut 0.7s cubic-bezier(0, 0.63, 0.59, 0.99) forwards;
 }
 
 @media screen and (max-width: 768px){

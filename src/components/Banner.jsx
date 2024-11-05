@@ -1,12 +1,62 @@
 import React from 'react';
 import '../styles/Banner.css';
+import splitStringUsingRegex from '../utils/splitStringUsingRegex';
+import {motion} from 'framer-motion';
+
+
+const heading = 'ARZ Web Concept';
+const headingDesc = 'Web Development | Web Design | SEO';
+const slogan = 'Votre Vision, Notre Création';
+
+const charVariants = {
+    hidden: {
+        display: 'inline-block',
+        opacity: 0,
+        filter: 'blur(5px)',
+        position: 'relative',
+        transform: 'translateY(10px)',
+        willChange: 'filter, opacity, transform'
+    },
+    visible: {
+        display: 'inline-block',
+        opacity: 1,
+        filter: 'blur(0px)',
+        position: 'relative',
+        transform: 'translateY(0px)',
+        willChange: 'filter, opacity, transform'
+    }
+}
 
 const Banner = () => {
+    const headingChars = splitStringUsingRegex(heading);
+    const headingDescChars = splitStringUsingRegex(headingDesc);
+    const sloganChars = splitStringUsingRegex(slogan);
   return (
     <section className="arz-banner" id='home'>
         <div className="arz-banner-content">
-            <h1>ARZ Web Concept</h1>
-            <p>Web Development | Web Design | SEO</p>
+            <motion.h1
+                initial='hidden'
+                whileInView='visible'
+                transition={{staggerChildren: 0.05}}
+            >
+                {headingChars.map((char) => (
+                <motion.span key={char} transition={{duration: 0.25}} variants = {charVariants}>
+                    {char}
+                </motion.span>
+                ))}
+            </motion.h1>
+            <motion.p
+            initial='hidden'
+            whileInView='visible'
+            transition={{staggerChildren: 0.05}}
+            >
+
+                {headingDescChars.map((char) => (
+                    <motion.span key={char} transition={{duration: 0.25}} variants = {charVariants}>
+                    {char}
+                    </motion.span>
+                ))}
+            </motion.p>
             <p className="main-text-top">Votre <b>Vision</b>, Notre <b>Création</b></p>
             <div className="arz-online">
                 <div className="arz-online-ping"></div>
