@@ -4,8 +4,8 @@ import splitStringUsingRegex from '../utils/splitStringUsingRegex';
 import {motion} from 'framer-motion';
 
 
-const heading = 'ARZ Web Concept';
-const headingDesc = 'Web Development | Web Design | SEO';
+const heading = "ARZ Web Concept";
+const headingDesc = "Web Development | Web Design | SEO";
 const slogan = 'Votre Vision, Notre Création';
 
 const charVariants = {
@@ -34,30 +34,29 @@ const Banner = () => {
   return (
     <section className="arz-banner" id='home'>
         <div className="arz-banner-content">
-            <motion.h1
-                initial='hidden'
-                whileInView='visible'
-                transition={{staggerChildren: 0.05}}
-            >
-                {headingChars.map((char) => (
-                <motion.span key={char} transition={{duration: 0.25}} variants = {charVariants}>
-                    {char}
-                </motion.span>
+            <motion.h1 initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05}}>
+                {headingChars.map((char, index) => (
+                    <motion.span key={index} transition={{duration: 0.25}} variants={charVariants}>
+                        {char === ' ' ? '\u00A0' : char}
+                    </motion.span>
                 ))}
             </motion.h1>
-            <motion.p
-            initial='hidden'
-            whileInView='visible'
-            transition={{staggerChildren: 0.05}}
-            >
-
+            <motion.p initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05}}>
                 {headingDescChars.map((char) => (
                     <motion.span key={char} transition={{duration: 0.25}} variants = {charVariants}>
-                    {char}
+                        {char === ' ' ? '\u00A0' : char}
                     </motion.span>
                 ))}
             </motion.p>
-            <p className="main-text-top">Votre <b>Vision</b>, Notre <b>Création</b></p>
+            <motion.p initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05}}  className="main-text-top">
+                <b>
+                {sloganChars.map((char) => (
+                    <motion.span key={char} transition={{duration: 0.25}} variants = {charVariants}>
+                        {char === ' ' ? '\u00A0' : char}
+                    </motion.span>
+                ))}
+                </b>
+            </motion.p>
             <div className="arz-online">
                 <div className="arz-online-ping"></div>
                 <div className="arz-online-ping two"></div>
