@@ -1,0 +1,105 @@
+.arz-services{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 500px 0;
+}
+
+.arz-services h2{
+    font-size: 3rem;
+    color: #ffffff;
+    margin-bottom: 150px;
+}
+
+.arz-service-grid{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    filter: drop-shadow(0 0 40px rgba(0,0,0,0.5));
+}
+
+.arz-service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 570px;
+    width: 650px;
+    border-radius: 30px;
+    border: #5C626B 2px solid;
+    color: #ffffff;
+    background-color: #172133;
+    z-index: 2;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.arz-service:hover{
+    cursor: pointer;
+    border: #bebebe 2px solid;
+    transition: all 0.5s;
+    box-shadow: inset 0 0 38px 15px #263651;
+}
+
+.arz-service img{
+    transition: all 0.5s;
+}
+
+.arz-service:hover img {
+    transform: translateY(-30px);
+}
+
+.arz-service p{
+    position: relative;
+    top: 40px;
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.arz-service img{
+    position: relative;
+    top: 70px;
+    width: 80%;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.arz-service.back{
+    width: 455px;
+    height: 475px;    
+    z-index: 1;
+} 
+
+.arz-service.back.left{
+    margin-right: -30px;
+}
+
+.arz-service.back.left img{
+    position: relative;
+    top: 13px;
+    width: 45%;
+    object-fit: cover;
+}
+
+.arz-service.back.left p{
+    position: relative;
+    top: 150px;
+    text-align: center;
+}
+
+.arz-service.back.right{
+    margin-left: -30px;
+}
+
+.arz-service.back.right img{
+    position: relative;
+    top: 13px;
+    width: 45%;
+    object-fit: cover;
+}
+
+.arz-service.back.right p{
+    position: relative;
+}
