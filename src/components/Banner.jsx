@@ -49,13 +49,11 @@ const Banner = () => {
                 ))}
             </motion.p>
             <motion.p initial='hidden' whileInView='visible' transition={{staggerChildren: 0.05}}  className="main-text-top">
-                <b>
                 {sloganChars.map((char) => (
                     <motion.span key={char} transition={{duration: 0.25}} variants = {charVariants}>
                         {char === ' ' ? '\u00A0' : char}
                     </motion.span>
                 ))}
-                </b>
             </motion.p>
             <div className="arz-online">
                 <div className="arz-online-ping"></div>

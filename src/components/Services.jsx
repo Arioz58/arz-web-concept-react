@@ -25,22 +25,10 @@ const servicesVariants = {
     }
 }
 const Services = () => {
-    const [mousePosition, setMousePosition] = React.useState({ x: 0, y: 0 });
-
-    React.useEffect(() => {
-        const handleMouseMove = (event) => {
-            setMousePosition({ x: event.clientX, y: event.clientY });
-        };
-
-        window.addEventListener('mousemove', handleMouseMove);
-
-        return () => {
-            window.removeEventListener('mousemove', handleMouseMove);
-        };
-    }, []);
 
     return (
         <div className="arz-services" id="services">
+            
             <h2>Services</h2>
             <motion.div className="arz-service-grid" initial="hidden" whileInView="visible" transition={{staggerChildren: 0.35}}>
                 <motion.div className="arz-service back left" variants={servicesVariants} >
@@ -56,6 +44,10 @@ const Services = () => {
                     <img src={arz_serv_branding} alt="" />
                 </motion.div>
             </motion.div>
+            <div className="serv-circles">
+                <div className="serv-circle one"></div>
+                <div className="serv-circle two"></div>
+            </div>
         </div>
     );
 };
