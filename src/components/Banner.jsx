@@ -6,7 +6,7 @@ import {motion} from 'framer-motion';
 
 const heading = "ARZ Web Concept";
 const headingDesc = "Web Development | Web Design | SEO";
-const slogan = 'Votre Vision, Notre Création';
+const slogan = 'Votre Vision, Notre Création.';
 
 const charVariants = {
     hidden: {
