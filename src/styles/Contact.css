@@ -35,12 +35,12 @@
 }
 
 .contact-info{
-    margin-top: 300px;
+    margin-top: 150px;
     font-family: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     font-weight: 500;
     color: #ffffff;
     overflow: hidden;
@@ -51,26 +51,28 @@
 }
 
 .contact-item .icon{
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
 }
 
-.contact-item span{
-    margin-left: 30px;
+.contact-item a{
+    margin-left: 10px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .contact-info::after{
     content: "";
     position: relative;
     width: 1000px;
-    height: 400px;
+    height: 200px;
     border-radius: 100%;
     background: #0021db57;
     margin-top: 50px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    top: 200px;
+    top: 100px;
     filter: blur(180px);
 }
 

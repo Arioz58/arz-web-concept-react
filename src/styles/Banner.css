@@ -143,8 +143,7 @@
     height: 100%;
     width: 100%;
     opacity: .3;
-    background-image: url(../assets/grain.jpg);
-    
+    background-image: url(../assets/grain.jpg);   
 }
 
 .circle{
