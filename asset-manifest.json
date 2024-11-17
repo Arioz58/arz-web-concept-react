@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/arz-web-concept-react/static/css/main.51a519ad.css",
+    "main.css": "/arz-web-concept-react/static/css/main.12c3011c.css",
     "main.js": "/arz-web-concept-react/static/js/main.632eae58.js",
     "static/media/ARZ-map.png": "/arz-web-concept-react/static/media/ARZ-map.47e262c86eedd2a387d4.png",
     "static/media/arz-INdex.png": "/arz-web-concept-react/static/media/arz-INdex.f5a88a5a852708fff93b.png",
@@ -11,11 +11,11 @@
     "static/media/arz-palette.png": "/arz-web-concept-react/static/media/arz-palette.32627261518f641ff488.png",
     "static/media/logo.png": "/arz-web-concept-react/static/media/logo.cc8d44131f5ff7b7a52e.png",
     "index.html": "/arz-web-concept-react/index.html",
-    "main.51a519ad.css.map": "/arz-web-concept-react/static/css/main.51a519ad.css.map",
+    "main.12c3011c.css.map": "/arz-web-concept-react/static/css/main.12c3011c.css.map",
     "main.632eae58.js.map": "/arz-web-concept-react/static/js/main.632eae58.js.map"
   },
   "entrypoints": [
-    "static/css/main.51a519ad.css",
+    "static/css/main.12c3011c.css",
     "static/js/main.632eae58.js"
   ]
 }
