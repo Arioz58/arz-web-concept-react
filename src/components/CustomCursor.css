@@ -1,0 +1,25 @@
+* {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(175, 175, 175, 0.281);
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 1px 0px #ffffff56;
+    pointer-events: none;
+    top: -20px;
+    left: -20px;    
+    backdrop-filter: blur(5px);
+    z-index: 9999;
+}
+
+.cursor-noise{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: url(../assets/grain.jpg);
+    opacity: .1;
+}
