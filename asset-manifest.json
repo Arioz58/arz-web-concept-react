@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/arz-web-concept-react/static/css/main.51a519ad.css",
+    "main.js": "/arz-web-concept-react/static/js/main.632eae58.js",
+    "static/media/ARZ-map.png": "/arz-web-concept-react/static/media/ARZ-map.47e262c86eedd2a387d4.png",
+    "static/media/arz-INdex.png": "/arz-web-concept-react/static/media/arz-INdex.f5a88a5a852708fff93b.png",
+    "static/media/arz-iphone-services.png": "/arz-web-concept-react/static/media/arz-iphone-services.e24f15fc5d4b19bac1e3.png",
+    "static/media/grain.jpg": "/arz-web-concept-react/static/media/grain.fbdb9bb0e4778aaaec8c.jpg",
+    "static/media/ARZ-brk.png": "/arz-web-concept-react/static/media/ARZ-brk.f32d58970ffcb2e627fc.png",
+    "static/media/ARZ-phone.png": "/arz-web-concept-react/static/media/ARZ-phone.b2d5573dee113d21996c.png",
+    "static/media/arz-palette.png": "/arz-web-concept-react/static/media/arz-palette.32627261518f641ff488.png",
+    "static/media/logo.png": "/arz-web-concept-react/static/media/logo.cc8d44131f5ff7b7a52e.png",
+    "index.html": "/arz-web-concept-react/index.html",
+    "main.51a519ad.css.map": "/arz-web-concept-react/static/css/main.51a519ad.css.map",
+    "main.632eae58.js.map": "/arz-web-concept-react/static/js/main.632eae58.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.51a519ad.css",
+    "static/js/main.632eae58.js"
+  ]
+}
