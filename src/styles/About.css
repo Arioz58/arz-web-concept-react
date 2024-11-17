@@ -109,6 +109,15 @@ h2{
     animation: fadeOut 0.7s cubic-bezier(0, 0.63, 0.59, 0.99) forwards;
 }
 
+.arz-about-content p.arz-about-paragraph {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+}
+
+.fade {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
 @media screen and (max-width: 768px){
     .arz-about{
         width: 80%;
