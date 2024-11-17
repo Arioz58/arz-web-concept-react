@@ -4,9 +4,6 @@ import ARZphone from "../assets/ARZ-phone.png";
 import ARZbrk from "../assets/ARZ-brk.png";
 import ARZlogo from "../assets/logo.png";
 import "../styles/About.css";
-import ARZLocation from "../assets/ARZ-location.png";
-import ARZPhonePC from "../assets/ARZ-phone-PC.png";
-import ARZbrk from "../assets/ARZ-brk.png";
 
 const About = () => {
     const containerRef = useRef(null);
@@ -15,13 +12,6 @@ const About = () => {
     const brkRef = useRef(null);
     const gridRef = useRef(null);
     useEffect(() => {
-        const paragraphList = [
-            "ARZ Web Concept est une agence de développement web basée à Strasbourg spécialisée dans la création de sites web et d'applications web sur mesure. Nous accompagnons nos clients dans la réalisation de leurs projets web en leur proposant des solutions adaptées à leurs besoins.",
-            "Notre équipe est composée de développeurs web passionnés par leur métier et qui mettent tout en œuvre pour satisfaire les besoins de nos clients. Nous sommes à l'écoute de nos clients et nous les accompagnons tout au long de leur projet pour leur garantir un résultat de qualité.",
-            "Nous mettons notre expertise à votre service pour vous aider à concrétiser vos projets web. Que vous soyez une entreprise, une association ou un particulier, nous vous accompagnons dans la réalisation de votre projet web."
-        ];
-
-        const paragraphImgList = [ ARZLocation, ARZPhonePC, ARZbrk ]; // Add images as needed
 
         const handleScroll = () => {
             const container = containerRef.current;
